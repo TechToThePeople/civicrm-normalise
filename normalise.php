@@ -2,6 +2,19 @@
 
 require_once 'normalise.civix.php';
 
+
+function normalise_civicrm_buildForm ( $formName, &$form ){
+  if ("CRM_Contact_Form_Contact" == $formName) {
+    //CRM_Core_Resources::singleton()->addScript(file_get_contents(dirname( __FILE__ ) ."/js/normalise.js"));
+    CRM_Core_Resources::singleton()->addScript(file_get_contents(dirname( __FILE__ ) ."/js/normalise.js"));
+  }
+//  die ($formName);
+}
+
+function normalise_civicrm_pre( $op, $objectName, $id, &$params ){
+  die ($objectName);
+}
+
 /**
  * Implementation of hook_civicrm_config
  */
