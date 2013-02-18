@@ -4,15 +4,26 @@ require_once 'normalise.civix.php';
 
 
 function normalise_civicrm_buildForm ( $formName, &$form ){
-  if ("CRM_Contact_Form_Contact" == $formName) {
-    //CRM_Core_Resources::singleton()->addScript(file_get_contents(dirname( __FILE__ ) ."/js/normalise.js"));
+  $names = array ("CRM_Profile_Form_Edit","CRM_Contact_Form_Contact","CRM_Event_Form_Registration_Register","CRM_Contribute_Form_Contribution_Main");
+  if (in_array($formName,$names)) {
     CRM_Core_Resources::singleton()->addScript(file_get_contents(dirname( __FILE__ ) ."/js/normalise.js"));
   }
-//  die ($formName);
 }
 
 function normalise_civicrm_pre( $op, $objectName, $id, &$params ){
-  die ($objectName);
+  if (!is_array($params))
+    return;  
+  if ($objectName == "Profile") {
+    $fields=array("first_name","last_name","legal_name");
+    $fieldsAccronym= array("current_employer","organisation_name","nick_name");
+    foreach ($params as $k => &$v) {
+      if (in_array($k,$fields)) {
+        if ($v == strtolower($v) || $v == strtoupper($v)) {
+          $v = strtoupper($v[0]) . strtolower(substr($v,1));
+        }
+      }
+    }
+  }
 }
 
 /**

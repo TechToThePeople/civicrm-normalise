@@ -18,6 +18,7 @@ While we are at it, it applies as well to the back-office for your staff. Becaus
   <develStage>beta</develStage>
   <compatibility>
     <ver>4.2</ver>
+    <ver>4.3</ver>
   </compatibility>
   <civix>
     <namespace>CRM/Normalise</namespace>
