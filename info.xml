@@ -4,9 +4,11 @@
   <name>Normalise the data entered by your constituents</name>
   <description>Your org has defined how the names should look like and the team is, mostly, respecting it. 
 So you end up with Xavier Dutoit instead of xavier dutoit or XAVIER DUTOIT. However, your visitors that donate or register to an event aren't that disciplined.
-Because rules about when to put upercase and lowercase are complicated, it only changes when we are sure they are invalid:ALL UPERCASE or all lowercase. Trust me, it's the only time we can be sure. For instance "van Dach" is the proper spelling in belgium, but "Van Dach" is the correct one in the netherland. Or the other way around. Told you, humans are complicated.
+Because rules about when to put uppercase and lowercase are complicated, it only changes when we are sure they are invalid:ALL UPERCASE or all lowercase. Trust me, it's the only time we can be sure. For instance "van Dach" is the proper spelling in belgium, but "Van Dach" is the correct one in the netherland. Or the other way around. Told you, humans are complicated.
 Anyway, this extension helps them to chose the appropriate format with a bit of javascript love, and an extra bit of php to handle imports.
-While we are at it, it applies as well to the back-office for your staff. Because, you know, we are all humans after all. 
+While we are at it, it applies as well to the back-office for your staff. Because, you know, we are all humans after all.
+
+Please note that this doesn't alter the names of contacts that are added through Drupal Webforms. #patchwelcome 
 </description>
   <license>aGPL3</license>
   <maintainer>
