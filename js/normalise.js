@@ -5,12 +5,49 @@ cj(function($){
      var v=$(dom).val();
      if (v == v.toLowerCase()) {
        $(dom).val(v[0].toUpperCase() + v.slice(1));
-       return;
+       
      }
      if (v == v.toUpperCase()) {
        $(dom).val(v[0] + v.slice(1).toLowerCase());
-       return;
+       
      }
+     
+      var v=$(dom).val();
+      idx = v.toLowerCase().indexOf(" and ") ;
+
+     if( idx > -1){       
+        tmp = v.substring(0, idx );
+        $(dom).val(tmp); 
+      }
+     
+     
+         var v=$(dom).val();
+      idx = v.toLowerCase().indexOf(" & ") ;
+
+     if( idx > -1){       
+        tmp = v.substring(0, idx );
+        $(dom).val(tmp); 
+      }
+     
+     
+      var v=$(dom).val();
+      idx = v.toLowerCase().indexOf(" family") ;
+
+     if( idx > -1){       
+        tmp = v.substring(0, idx );
+        $(dom).val(tmp); 
+      }
+      
+       var v=$(dom).val();
+      idx = v.toLowerCase().indexOf(" household") ;
+
+     if( idx > -1){       
+        tmp = v.substring(0, idx );
+        $(dom).val(tmp); 
+      }
+     
+     
+     
   }
 
   $.each(fields,function(i,field){
