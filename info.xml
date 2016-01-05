@@ -23,6 +23,7 @@ Please note that this doesn't alter the names of contacts that are added through
     <ver>4.3</ver>
     <ver>4.4</ver>
     <ver>4.5</ver>
+    <ver>4.6</ver>
   </compatibility>
   <civix>
     <namespace>CRM/Normalise</namespace>
