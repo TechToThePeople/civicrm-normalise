@@ -16,15 +16,25 @@ Please note that this doesn't alter the names of contacts that are added through
     <email>civicrm@tttp.eu</email>
   </maintainer>
   <releaseDate>2013-02-14</releaseDate>
-  <version>1.1</version>
+  <version>1.2</version>
   <develStage>stable</develStage>
   <compatibility>
     <ver>4.2</ver>
     <ver>4.3</ver>
     <ver>4.4</ver>
     <ver>4.5</ver>
+    <ver>4.6</ver>
+    <ver>4.7</ver>
+    <ver>4.8</ver>
+    <ver>4.9</ver>
+    <ver>5.0</ver>
+    <ver>5.1</ver>
+    <ver>5.2</ver>
   </compatibility>
   <civix>
     <namespace>CRM/Normalise</namespace>
   </civix>
+ <urls>
+    <url desc="Documentation">https://github.com/TechToThePeople/civicrm-normalise</url>
+  </urls>
 </extension>
