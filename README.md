@@ -1,3 +1,5 @@
+moved to [civicrm git server](https://lab.civicrm.org/extensions/normalise)
+
 civicrm-normalise
 =================
 
